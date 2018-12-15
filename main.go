@@ -100,6 +100,6 @@ func main() {
 	log.SetFlags(0)
 	http.HandleFunc("/", serve)
 	listen := fmt.Sprintf("0.0.0.0:%d", *addr)
-	log.Print("listening on %s", listen)
+	log.Print("listening on ", listen)
 	log.Fatal(http.ListenAndServe(listen, nil))
 }
